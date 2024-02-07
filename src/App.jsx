@@ -24,10 +24,8 @@ function App() {
     setTodos((prev) =>
       prev.map((eachTodo) =>
         eachTodo.id === id
-          ? { ...eachTodo, complelted: !eachTodo.complelted }
-          : eachTodo
-      )
-    );
+          ? { ...eachTodo, completed: !eachTodo.completed }
+          : eachTodo));
   };
 
   // Dealing with local storage
